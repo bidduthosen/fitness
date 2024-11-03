@@ -22,8 +22,9 @@ body{
 }
 
 .row{
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 
@@ -66,4 +67,24 @@ li{
     margin-right: 1rem;
     padding: 10px 20px;
     border-radius: 46px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+
+
+
+/* Responsive design */
+
+
+@media screen and (max-width: 576px){
+    .menu-icon{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
 }
