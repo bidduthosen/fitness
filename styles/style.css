@@ -24,13 +24,14 @@ body{
 .row{
     max-width: 1060px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 
 :root{
     --text-color: rgb(255, 255, 255);
     --primary-color: #E6533C;
+    --p-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -38,12 +39,16 @@ body{
 .inter-font {
   font-family: "Inter", sans-serif;
 }
+.dancing-script{
+    font-family: "Dancing Script", cursive;
+}
 
 
 /* header section styles------------- */
 #header{
     margin-top: 20px;
     color: var(--text-color);
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
 }
 .fitness{
     color: var(--primary-color);
@@ -74,6 +79,123 @@ li{
 }
 
 
+/* banner styles */
+.banner-container{
+    margin-top: 2rem;
+}
+.banner-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-content{
+    /* flex: 1; */
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+.banner-content> h3{ 
+    font-size: 78px;
+    font-weight: 900;
+    color: var(--text-color);
+}
+.banner-content > p{
+    color: var(--p-color);
+    font-size: 16px;
+}
+.Join-club{
+    padding: 16px 40px;
+    border-radius: 46px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    border: none;
+    margin-right: 10px;
+}
+
+.download-app{
+    padding: 16px 40px;
+    border-radius: 46px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    background: black;
+    border: 1px solid white;
+}
+
+.banner-img{
+    /* flex: 1; */
+    justify-content: center;
+    position: relative;
+}
+.banner-img > img{
+    width: 350px;
+    height: 580px;
+}
+
+.round{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-right: 12px;
+}
+.video-tutorial, .free-workout{
+    background-color: rgba(48, 48, 48, 0.54);
+    padding: 23px;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 12px;
+}
+.inner-text > h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p-color);
+
+}
+
+.video-tutorial{
+    position: absolute;
+    left: -22px;
+    bottom: 64px;
+}
+.free-workout{
+    position: absolute;
+    left: 302px;
+    top: 130px;
+    width: 206px;
+}
+.free-workout-time{
+    font-size: 40px !important;
+    font-weight: 900;
+}
+
+
+
+/* Change Your Habits styles */
+.your-habits-section{
+    margin: 80px 0;
+}
+.section-title-content{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.section-title{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 13px;
+}
+.section-discription{
+    color: var(--p-color);
+}
+
+
+
+
+
 
 
 
@@ -86,5 +208,21 @@ li{
     }
     .nav-list{
         display: none;
+    }
+
+    /* banner */
+
+    .banner-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Join-club, .download-app {
+        padding: 16px 20px;
+    }
+    .video-tutorial{
+        left: -5px;
+    }
+    .free-workout{
+        left: 296px;
+        top: 53px;
     }
 }
