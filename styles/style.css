@@ -65,7 +65,7 @@ ul{
     border-radius: 46px;
     padding: 4px;
 }
-ul> li:first-child{
+.navbar-list > ul> li:first-child{
     background-color: var(--primary-color);
 }
 li{
@@ -273,6 +273,54 @@ li{
 
 
 
+/* footer */
+
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    padding: 70px 0;
+}
+.footer-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-title h2{
+    font-size: 70px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.footer-title p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--p-color);
+    width: 80%;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.footer-contact > div> h6{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+.footer-contact > div> li{
+    padding-left: 0;
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--p-color);
+}
+
+.all-right{
+    text-align: center;
+    color: var(--p-color);
+    padding: 35px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 
 
 /* Responsive design */
@@ -309,6 +357,12 @@ li{
         width: 90%;
     }
 
+    .habits-items > img{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
     .habits-content{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 50px;
@@ -328,4 +382,13 @@ li{
      .Join-now-btn{
         width: 100%;
      }
+
+     .footer-content{
+        grid-template-columns: 1fr;
+    }
+    .footer-contact{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        row-gap: 40px;
+    }
 }
