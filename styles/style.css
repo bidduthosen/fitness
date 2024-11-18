@@ -193,7 +193,34 @@ li{
 }
 
 
+.habits-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: var(--text-color);
+    margin-top: 50px;
+    column-gap: 50px;
+}
 
+.habits-items {
+    flex-direction: column;
+    text-align: center;
+}
+.habits-items > img{
+    border-radius: 50%;
+    border: 3px solid gray;
+}
+.habits-items > h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.habits-items > p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    padding: 0 5px;
+    color: var(--p-color);
+}
 
 
 
@@ -224,5 +251,17 @@ li{
     .free-workout{
         left: 296px;
         top: 53px;
+    }
+
+
+    /* your habits */
+
+    .section-title-content{
+        width: 90%;
+    }
+
+    .habits-content{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
     }
 }
