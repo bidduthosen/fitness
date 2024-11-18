@@ -223,6 +223,55 @@ li{
 }
 
 
+/*  */
+
+.run-an-extra-container{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    background: #222222;
+    padding: 30px;
+    border-radius: 15px;
+}
+.run-content{
+    padding-left: 20px;
+}
+.run-title{
+    font-size: 48px;
+    font-weight: 900px;
+    color: var(--text-color);
+}
+
+.run-dis{
+    font-size: 14px;
+    font-weight: 400px;
+    color: var(--p-color);
+    padding: 15px 0;
+    width: 70%;
+}
+.run-img img{
+   display: flex;
+   justify-self: end;
+   border-radius: 15px;
+}
+.run-img img{
+    width: 366px;
+}
+
+.Join-now-btn{
+    padding: 10px 60px;
+    border-radius: 46px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    border: none;
+}
+
+
+
+
 
 
 
@@ -264,4 +313,19 @@ li{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 50px;
     }
+
+    .run-an-extra-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+    .run-img img{
+        display: block;
+        width: 100%;
+     }
+     .run-dis{
+        width: 100%;
+    }
+     .Join-now-btn{
+        width: 100%;
+     }
 }
