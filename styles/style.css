@@ -434,8 +434,14 @@ select:focus{
         left: -5px;
     }
     .free-workout{
-        left: 296px;
+        left: 230px;
         top: 53px;
+    }
+    .video-tutorial, .free-workout{
+        padding: 10px;
+    }
+    .free-workout-time{
+        font-size: 20px !important;
     }
 
 
