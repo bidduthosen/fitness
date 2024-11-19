@@ -409,7 +409,41 @@ select:focus{
     font-size: 20px;
 }
 
+/* register styled */
+#register-section{
+    margin: 80px 0;
+}
+.register-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    color: white;
+    margin-top: 60px;
+}
 
+
+.register-items{
+    background-color: #222222;
+    height: 273px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register-items:hover{
+    background-color: transparent;
+    border: 2px solid #222222;
+}
+.register-items h5{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+.register-items p{
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--p-color);
+}
 
 /* Responsive design */
 
@@ -434,7 +468,7 @@ select:focus{
         left: -5px;
     }
     .free-workout{
-        left: 230px;
+        left: 200px;
         top: 53px;
     }
     .video-tutorial, .free-workout{
@@ -495,6 +529,12 @@ select:focus{
     }
 
 
+
+    /* register now style */
+
+    .register-container{
+        grid-template-columns: 1fr;
+    }
 
      /* footer styles */
      .footer-content{
